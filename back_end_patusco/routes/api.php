@@ -34,5 +34,5 @@ Route::middleware(['auth:sanctum'])->prefix('animal')->group(function () {
 
 
 Route::get('/teste', function (Request $request) {
-    return dd(222);
-})->middleware('');
+    return dd("Boolerplate");
+});
