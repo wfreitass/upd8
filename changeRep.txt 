@@ -1,5 +1,3 @@
-Para mudar a URL remota de um repositório Git para a URL https://github.com/wfreitass/boilerplate_laravel, siga os passos abaixo:
-
 1. Verificar a URL remota atual
 Primeiro, verifique qual é a URL remota atual configurada no seu repositório:
 
@@ -8,7 +6,7 @@ git remote -v
 2. Alterar a URL remota
 Agora, para mudar a URL do repositório remoto para a nova URL, use o seguinte comando:
 
-git remote set-url origin https://github.com/wfreitass/boilerplate_laravel
+git remote set-url origin https://github.com/wfreitass/upd8
 
 3. Verificar novamente
 Verifique se a URL remota foi alterada corretamente:
@@ -17,4 +15,5 @@ git remote -v
 4. Fazer o Push para o novo repositório
 Agora, você pode fazer o push para o novo repositório:
 
-git push origin <branch> --force
+git remote add origin https://github.com/wfreitass/upd8
+git push origin https://github.com/wfreitass/upd8 --force
