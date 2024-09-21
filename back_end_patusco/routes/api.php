@@ -20,15 +20,7 @@ Route::prefix('auth')->group(function () {
         ->middleware('auth:sanctum');
 });
 
-
-Route::middleware(['auth:sanctum'])->resource('animal', AnimalController::class);
-Route::middleware(['auth:sanctum'])->resource('type_animal', TipoAnimalController::class);
-Route::middleware(['auth:sanctum'])->resource('consultation', ConsultationController::class);
-
-Route::middleware(['auth:sanctum'])->prefix('animal')->group(function () {
-    Route::get('/user/{id}', [AnimalController::class, 'allAnimalsUser']);
-    // Route::get('/{id}', [TipoAnimalController::class, 'show']);
-});
+// Route::middleware(['auth:sanctum'])->resource('animal', AnimalController::class);
 
 
 
