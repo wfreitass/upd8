@@ -15,5 +15,6 @@ git remote -v
 4. Fazer o Push para o novo repositório
 Agora, você pode fazer o push para o novo repositório:
 
+git remote remove url
 git remote add origin https://github.com/wfreitass/upd8
 git push origin https://github.com/wfreitass/upd8 --force
