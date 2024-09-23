@@ -2,6 +2,10 @@
 
 namespace App\Providers;
 
+use App\Interfaces\ClienteRepositoryInterface;
+use App\Interfaces\ClienteServiceInterface;
+use App\Repositories\ClienteRepository;
+use App\Services\ClienteService;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -11,15 +15,12 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        // $this->app->bind(AnimalRepositoryInterface::class, AnimalRepository::class);
-        // $this->app->bind(AnimalServiceInterface::class, AnimalService::class);
+        $this->app->bind(ClienteRepositoryInterface::class, ClienteRepository::class);
+        $this->app->bind(ClienteServiceInterface::class, ClienteService::class);
     }
 
     /**
      * Bootstrap any application services.
      */
-    public function boot(): void
-    {
-        // Gate::policy(Animal::class, AnimalPolicy::class);
-    }
+    public function boot(): void {}
 }

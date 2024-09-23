@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AnimalController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\ConsultationController;
 use App\Http\Controllers\TipoAnimalController;
 use Illuminate\Http\Request;
@@ -20,10 +21,7 @@ Route::prefix('auth')->group(function () {
         ->middleware('auth:sanctum');
 });
 
-// Route::middleware(['auth:sanctum'])->resource('animal', AnimalController::class);
-
-
-
+Route::middleware(['auth:sanctum'])->resource('cliente', ClienteController::class);
 
 Route::get('/teste', function (Request $request) {
     return dd("Boolerplate");

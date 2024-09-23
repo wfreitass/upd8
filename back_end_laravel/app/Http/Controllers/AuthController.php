@@ -47,7 +47,6 @@ class AuthController extends Controller
                 'password' => Hash::make($request->password)
             ]);
 
-            $user->assignRole('cliente');
 
             return response()->json([
                 'status' => true,
