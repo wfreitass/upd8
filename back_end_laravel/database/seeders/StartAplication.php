@@ -15,6 +15,7 @@ class StartAplication extends Seeder
         $this->call([
             EstadoBrasilSeeder::class,
             CidadeBrasilSeeder::class,
+            RepresentanteSeeder::class,
         ]);
     }
 }
