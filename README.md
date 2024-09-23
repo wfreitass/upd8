@@ -50,22 +50,7 @@ Os Services encapsulam a lógica de negócios da aplicação, fornecendo uma cam
 Repositories
 Os Repositories são responsáveis por encapsular a lógica de acesso aos dados, tornando a aplicação mais flexível e permitindo mudanças na camada de persistência sem afetar outras partes do código.
 
-Enums
-Utilizamos Enums para definir constantes, como roles de usuário e permissões, de forma tipada e segura. Os enums ajudam a evitar o uso de strings “mágicas” e tornam o código mais claro e menos propenso a erros.
 
 Interfaces
 As Interfaces são utilizadas para definir contratos que os Services e Repositories devem seguir. Isso garante que as classes sejam intercambiáveis, facilitando a injeção de dependências e permitindo substituições simples em testes ou mudanças futuras.
 
-Quasar Framework
-Oferece uma interface de usuário rica e responsiva, pronta para ser usada em aplicações web e mobile.
-
-Arquitetura baseada em Services
-Facilita a comunicação com APIs externas, encapsulando a lógica de negócios e mantendo o código organizado.
-
-Interfaces TypeScript
-Garante que os dados manipulados tenham os tipos corretos, evitando erros de tipagem em tempo de execução.
-
-Funcionalidades Principais
-Quasar Framework: Oferece uma interface de usuário rica e responsiva, pronta para ser usada em aplicações web e mobile.
-Arquitetura baseada em Services: Facilita a comunicação com APIs externas, encapsulando a lógica de negócios e mantendo o código organizado.
-Interfaces TypeScript: Garante que os dados manipulados tenham os tipos corretos, evitando erros de tipagem em tempo de execução.
